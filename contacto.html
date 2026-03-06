@@ -11,19 +11,46 @@
 
 <body>
     <header>
-        <img src="img/taco_highquality.png" alt="Logo de la empresa">
+        <img src="img/logo.png" alt="Logo de la empresa">
         <nav>
             <ul class="lista">
-                <li><a href="contacto.html">Contáctanos</a></li>
-                <li><a href="cronologia.html">Cronología</a></li>
-                <li><a href="proyecto-estrella.html">Reservas</a></li>
                 <li><a href="index.html">Índice</a></li>
+                <li><a href="proyecto-estrella.html">Reservas</a></li>
+                <li><a href="cronologia.html">Cronología</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>i>
             </ul>
         </nav>
 
     </header>
     <main>
-        <img src="./img/taco_highquality.png" alt="">
+
+        <div class="formulario">
+            <h2>Contacto</h2>
+
+            <form action="morning-paper-a0fc.contry-1990.workers.dev" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="motivo">Asunto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="soporte">Soporte</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <input id="mensaje" name="mensaje" type="text" minlength="10" required></input>
+
+                <label for="privacidad">Privacidad</label>
+                <input type="checkbox" name="privacidad" id="privacidad"></input>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <ul class="f2">

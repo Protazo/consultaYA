@@ -11,7 +11,7 @@ header img {
 }
 
 body {
-    background-color:rgb(255, 235, 255);
+    background-color: rgb(255, 235, 255);
     color: aliceblue;
     margin: 0;
 }
@@ -20,6 +20,7 @@ body {
     margin: 2rem 3rem 2rem 3rem;
     font-size: 1.4rem;
     text-align: center;
+
     & h4 {
         font-size: 5rem;
     }
@@ -36,25 +37,29 @@ section {
     & #uno {
         background-color: rgba(36, 71, 12, 0.767);
     }
+
     & #dos {
         background-color: rgba(58, 71, 12, 0.767);
     }
+
     & #tres {
         background-color: rgba(114, 84, 18, 0.767);
     }
+
     & #cuatro {
         background-color: rgba(71, 12, 12, 0.767);
     }
 }
 
 .titulo {
-    color:rgb(151, 0, 165);
+    color: rgb(151, 0, 165);
     margin: auto;
     margin-top: 4rem;
     margin-bottom: 2rem;
     font-size: 4rem;
     width: fit-content;
 }
+
 article {
     padding: 1rem;
     margin: 1rem 1.5rem;
@@ -68,6 +73,7 @@ article {
         margin: 0.4rem auto;
         font-size: 2rem;
     }
+
     & h4 {
         font-size: 3rem;
         margin: auto;
@@ -75,23 +81,10 @@ article {
         width: fit-content;
     }
 
-    
+
 }
 
-.aside {
-    display: flex;
-    gap: 2rem;
 
-    & aside {
-        flex: 1;
-    }
-
-    & main {
-        flex: 3;
-        flex-grow: 3;
-        
-    }
-}
 
 aside {
     background-color: rgb(70, 0, 110);
@@ -116,13 +109,14 @@ table {
     width: 90%;
     margin: 5rem auto;
     border-collapse: collapse;
-    filter:blur(1.5px);
+    filter: blur(1.5px);
     transition: transform 0.2s ease;
 
     & th {
         padding: 1.5rem;
         font-size: 2rem;
     }
+
     & td {
         padding: 1.5rem;
         font-size: 1.5rem;
@@ -139,9 +133,9 @@ table:hover {
     background-image: url("../img/taco_highquality.png");
     background-position: center;
     background-size: cover;
-    filter:blur(0px);
+    filter: blur(0px);
     transition: filter 0.5s ease-in-out;
-    transform:scale(1.05);
+    transform: scale(1.05);
     transition: transform 0.2s ease;
 }
 
@@ -237,12 +231,12 @@ footer {
     padding: 8rem 1rem 10rem 1rem;
     background-image: url("../img/fondo.jpg");
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     color: white;
-    font-weight:bolder;
-    font-family: "Rubik", sans-serif;  
-    
+    font-weight: bolder;
+    font-family: "Rubik", sans-serif;
+
 
     & h1 {
         padding-top: 3rem;
@@ -266,5 +260,290 @@ footer {
         background-color: rgb(255, 166, 255);
         border-radius: 15px;
         box-shadow: 3px 3px 5px black;
-        }
+    }
+}
+
+.formulario {
+    width: 50rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    color: #6c0087;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #b300ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #b3005f;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 40px;
+}
+
+header img{
+    width:90px;
+}
+
+.lista{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+.lista a{
+    text-decoration:none;
+    color:#5c008a;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.lista a:hover{
+    color:#8f2be2;
+}
+
+
+
+
+.aside{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    gap:40px;
+    padding:40px;
+}
+
+
+
+
+.columnas{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.tarjetas{
+    background: linear-gradient(135deg,#7b00b4,#9c27ff);
+    color:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.tarjetas:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+.tarjetas h1{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.tarjetas p{
+    line-height:1.6;
+}
+
+
+
+
+aside{
+    background:#5c008a;
+    color:white;
+    padding:30px;
+    border-radius:8px;
+    height:fit-content;
+}
+
+aside h2{
+    margin-bottom:15px;
+}
+
+aside p{
+    line-height:1.6;
+}
+
+
+
+
+footer{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:40px;
+    margin-top:40px;
+}
+
+footer ul{
+    list-style:none;
+    max-width:300px;
+}
+
+footer li{
+    margin-bottom:10px;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.subrayado{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+
+@media (max-width: 1024px){
+
+    .aside{
+        grid-template-columns: 1fr;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .formulario{
+        width: 90%;
+    }
+
+    table{
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    footer{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap:1rem;
+        text-align:center;
+    }
+
+    .lista{
+        flex-direction: column;
+        gap:1rem;
+        align-items:center;
+    }
+
+    header img{
+        width:120px;
+    }
+
+    .hero{
+        padding:4rem 1rem;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1.2rem;
+    }
+
+    .titulo{
+        font-size:2.5rem;
+        text-align:center;
+    }
+
+    article h4{
+        font-size:2rem;
+    }
+
+    article h1{
+        font-size:1.5rem;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .formulario{
+        width:95%;
+        padding:1.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align:center;
+        gap:2rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .tarjetas{
+        padding:20px;
+        font-size:1rem;
+    }
+
+    .titulo{
+        font-size:2rem;
+    }
+
+    table th, table td{
+        padding:0.8rem;
+        font-size:1rem;
+    }
+
 }
